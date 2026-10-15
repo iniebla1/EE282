@@ -26,3 +26,65 @@ Finally, explain why labs[1] behaves differently from the other three, even thou
 Prompt 3: Ask a question that requires a student to understand how to share access to a directory and a file in that directory on a Unix/Linux filesystem from their home directory with a colleague without exposing the user's entire directory. Your question should require an answer using chmod {u,g,o}{+,-}{r,w,x} (not using octal permissions).
 
 3. In your home directory (`~`), you have a directory called patient_study. Inside patient_study are two subdirectories: raw_data, which contains the file patient_ids.csv, and results which contains the file hemoglobin_summary.csv. Right now, every directory and file is private to only you the owner have access to. Someone in your lab needs to open  hemoglobin_summary.csv. However, they should **not** be able to list the contents of your home directory,or open anything in raw_data.Using only chmod with the {u,g,o}{+,-}{r,w,x} format how would you go about giving them access. 
+
+
+** Answer key **
+1.	cd ~/Downloads
+mkdir Patients_images
+cd Patients_images
+mkdir Patient1 Patient2 Patient3 Patient4
+cd ..
+cp XXX.pdf Patients_images/Patient1/
+cp XXX.pdf Patients_images/Patient2/
+cp XXX.pdf Patients_images/Patient3/
+cp XXX.pdf Patients_images/Patient4/
+( cd into each patient and ls to double check) 
+tree ~/Downloads/Patients_images
+2.	a) labs_mat[, 1] returns a numeric vector.
+labs_mat[, 1]
+[1] 13.5 12.1 14.2 11.8
+class(labs_mat[, 1])
+[1] "numeric"
+mean(labs_mat[, 1])
+[1] 12.9
+
+b) labs[, 1] returns a numeric vector, because matrix-style indexing drops a single column to a vector.
+labs[, 1]
+[1] 13.5 12.1 14.2 11.8
+
+class(labs[, 1])
+[1] "numeric"
+
+mean(labs[, 1])
+[1] 12.9
+
+c) labs[1] returns a data frame with one column, so mean() fails
+labs[1]
+  hemoglobin
+1       13.5
+2       12.1
+3       14.2
+4       11.8
+
+class(labs[1])
+[1] "data.frame"
+
+mean(labs[1])
+[1] NA
+Warning message:
+argument is not numeric or logical: returning NA
+
+d) labs[[1]] returns the column itself as a numeric vector.
+labs[[1]]
+[1] 13.5 12.1 14.2 11.8
+
+class(labs[[1]])
+[1] "numeric"
+
+mean(labs[[1]])
+[1] 12.9
+
+3.	chmod g+x ~
+chmod g+x ~/patient_study
+chmod g+x ~/patient_study/results
+chmod g+r ~/patient_study/results/hemoglobin_summary.csv
