@@ -28,7 +28,7 @@ Prompt 3: Ask a question that requires a student to understand how to share acce
 3. In your home directory (`~`), you have a directory called patient_study. Inside patient_study are two subdirectories: raw_data, which contains the file patient_ids.csv, and results which contains the file hemoglobin_summary.csv. Right now, every directory and file is private to only you the owner have access to. Someone in your lab needs to open  hemoglobin_summary.csv. However, they should **not** be able to list the contents of your home directory,or open anything in raw_data.Using only chmod with the {u,g,o}{+,-}{r,w,x} format how would you go about giving them access. 
 
 
-** Answer key **
+**Answer key**
 1.	cd ~/Downloads
 mkdir Patients_images
 cd Patients_images
