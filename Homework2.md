@@ -1,6 +1,6 @@
 **EE282 HW2**
 
-Prompt 1 Ask a problem that requires a student to understand navigation and manipulation of directories in a filesystem. Your question should require an answer using at least the following commands/concepts: cd, ../, mkdir, rmdir
+Prompt 1: Ask a problem that requires a student to understand navigation and manipulation of directories in a filesystem. Your question should require an answer using at least the following commands/concepts: cd, ../, mkdir, rmdir
 1. Navigate on your local computer to your Downloads folder and make a parent directory called **Patients_images**, next inside this directory make 4 directories to hold each of the patient’s radiology images you may label these **Patient1, Patient2, etc.** and inside each directory download **XXX.pdf** this file to your downloads and move it into each patient’s folder. Finally use the tree command to ensure you correctly moved all the files to their correct location
 
 
