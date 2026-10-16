@@ -18,6 +18,8 @@ We aim to address three questions. First, does baseline cellular composition pre
 Feasibility 
 
  This project is feasible because the data and initial processing has already been completed. All biopsies have been collected, profiled on the Xenium platform, and linked to clinical outcomes.  Samples have undergone standard spatial processing platforms by initially segmenting out cells using Cellpose (Stringer et al. 2021), filtered for quality, integrated across samples with Harmony (Korsunsky et al. 2019), and clustered with the Leiden algorithm (Traag et al. 2019) to produce an annotated annotations of each cell type.
+
+ 
  <img width="646" height="337" alt="Screenshot 2026-10-15 at 10 18 16 PM" src="https://github.com/user-attachments/assets/c6acc387-83dc-4245-b4ab-230587a36c85" />
 
  
