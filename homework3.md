@@ -5,10 +5,8 @@
 
 ## Scripts
 
-| Script 
-
-| [`code/scripts/hw3_genome_summary.sh`](code/scripts/hw3_genome_summary.sh) | Download the genome FASTA, verify its checksum, summarize it with `faSize` |
-| [`code/scripts/hw3_annotation_summary.sh`](code/scripts/hw3_annotation_summary.sh) | Download the GTF annotation, verify its checksum, summarize it with `bioawk` |
+[`code/scripts/hw3_genome_summary.sh`](code/scripts/hw3_genome_summary.sh) Download the genome FASTA, verify its checksum, summarize it with `faSize` |
+[`code/scripts/hw3_annotation_summary.sh`](code/scripts/hw3_annotation_summary.sh) Download the GTF annotation, verify its checksum, summarize it with `bioawk` |
 
 ## Software environment
 
