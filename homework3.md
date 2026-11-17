@@ -1,12 +1,12 @@
 # Homework 3: Pipelines
 
-All analyses use the *Drosophila melanogaster* genome from the current FlyBase release (**r6.69**), downloaded from
+ *Drosophila melanogaster* genome from the FlyBase downloaded from
 <https://s3ftp.flybase.org/genomes/Drosophila_melanogaster/current/>.
 
 ## Scripts
 
-| Script | Purpose |
-|---|---|
+| Script 
+
 | [`code/scripts/hw3_genome_summary.sh`](code/scripts/hw3_genome_summary.sh) | Download the genome FASTA, verify its checksum, summarize it with `faSize` |
 | [`code/scripts/hw3_annotation_summary.sh`](code/scripts/hw3_annotation_summary.sh) | Download the GTF annotation, verify its checksum, summarize it with `bioawk` |
 
